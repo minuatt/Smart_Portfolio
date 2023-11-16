@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/school"
+        android:id="@+id/home"
+        android:title="홈"/>
+    <item
+        android:icon="@drawable/text"
+        android:id="@+id/university"
+        android:title="전공성적"/>
+
+
+    <item
+        android:icon="@drawable/github"
+        android:id="@+id/github"
+        android:title="깃허브"/>
+
+    <item
+        android:icon="@drawable/instagram"
+        android:id="@+id/instagram"
+        android:title="인스타그램"/>
+
+</menu>

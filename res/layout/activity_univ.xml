@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".UnivActivity">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/note">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/goback"
+                android:src="@drawable/back"/>
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/school"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="26dp"
+                android:textStyle="bold"
+                android:text="전공 성적"
+                android:textSize="33dp"/>
+        </LinearLayout>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/text"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="35dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/down"
+                android:id="@+id/down"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="35dp"
+                android:layout_width="18dp"
+                android:layout_height="28dp"
+                android:src="@drawable/up"
+                android:id="@+id/up"/>
+                <TextView
+                    android:layout_marginLeft="105dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="1학년 전공성적"/>
+        </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/onegrade">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="※ 컴퓨팅 문제와 사고해결  : A+"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="º 기초프로그래밍  : B+"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="º 자바프로그래밍1  : B+"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="※ 선형대수  : A+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_200"
+            android:text="1학년 전공평균 : 4.0"/>
+    </LinearLayout>
+<!--        2학년 1학기-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/text"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/down"
+                android:id="@+id/down2_1"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="18dp"
+                android:layout_height="28dp"
+                android:src="@drawable/up"
+                android:id="@+id/up2_1"/>
+            <TextView
+                android:layout_marginLeft="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="2학년 1학기 전공성적"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/two_1grade">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="※ 이산구조론  : A+"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º 논리설계 및 실험  : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º C프로그래밍 : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º 회로이론및 실험  : B+"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="※ 파이썬과학프로그래밍 기초  : A+"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º 데이터사이언스 기초  : B0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_200"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="2학년1학기 전공평균 : 3.91"/>
+        </LinearLayout>
+<!--        2학년 2학기-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/text"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="50dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/down"
+                android:id="@+id/down2_2"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="50dp"
+                android:layout_width="18dp"
+                android:layout_height="28dp"
+                android:src="@drawable/up"
+                android:id="@+id/up2_2"/>
+            <TextView
+                android:layout_marginLeft="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="2학년 2학기 전공성적"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/two_2grade">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º 컴퓨터구조  : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º 자바프로그래밍2  : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º 임베디드시스템  : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" º 자료구조  : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="※  디지털신호처리  : A+"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="※  데이터베이스기초  : A+"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_200"
+                android:text="2학년2학기 전공평균 : 4.16"/>
+        </LinearLayout>
+<!--        3학년 1학기-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/text"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/down"
+                android:id="@+id/down3_1"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="18dp"
+                android:layout_height="28dp"
+                android:src="@drawable/up"
+                android:id="@+id/up3_1"/>
+            <TextView
+                android:layout_marginLeft="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="3학년 1학기 전공성적"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/three_1grade">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º 운영체제 : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º 인공지능  : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="º 웹프로그래밍  : B0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" º IoT네트워크  : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" º 소프트웨어개론  : A0"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="※ 신호및시스템  : A+"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_200"
+                android:text="3학년1학기 전공평균 : 3.91"/>
+        </LinearLayout>
+<!--        3학년2학기-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/text"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/down"
+                android:id="@+id/down3_2"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="18dp"
+                android:layout_height="28dp"
+                android:src="@drawable/up"
+                android:id="@+id/up3_2"/>
+            <TextView
+                android:layout_marginLeft="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="3학년 2학기 전공성적"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/three_2grade">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추가예정.."/>
+
+        </LinearLayout>
+<!--        4학년 1학기-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/four_grade">
+            <ImageView
+
+                android:layout_marginLeft="30dp"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/text"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/down"
+                android:id="@+id/down4_1"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="18dp"
+                android:layout_height="28dp"
+                android:src="@drawable/up"
+                android:id="@+id/up4_1"/>
+            <TextView
+                android:layout_marginLeft="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="4학년 전공성적"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/four_1grade">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추가예정.."/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/menu_navigation"
+        android:id="@+id/univ_drawer_view"/>
+</androidx.drawerlayout.widget.DrawerLayout>
